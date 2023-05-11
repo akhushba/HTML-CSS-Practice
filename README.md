@@ -1,6 +1,6 @@
 # Frontend-Development-Initial-Foothold
 
-Initial steps taken to create a foundation for HTML &amp; CSS in order to create my own website.
+Initial steps taken to create a foundation for HTML, CSS, and Javascript in order to create my own website.
 
 This repo will hold the progress I've be making towards building up my software development skills, particularily front-end web development.
 
