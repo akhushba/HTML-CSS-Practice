@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Form Controls</h1>
+
+    <input type="text">
+    <button>Our First Button</button>
+    <form action="https://google.ca">
+        <input type="text" name="username">
+        <!-- name changes url to include part of request -->
+        <button>Submit</button> 
+        <!-- pressing button sends you to google page -->
+    </form>
+    <form action="https://google.ca/search">
+        <input type="text" name="q">
+        <!-- name triggers q to search google, label very important -->
+        <button>Submit</button> 
+    </form>
+
+    <h1>Inputs</h1>
+    <form action="">
+        <label for="firstname">First Name</label>
+        <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+        <br>
+        <input type="password">
+        <input type="number">
+        <input type="email">
+        <!-- ensures there's an @ sign -->
+        <input type="color">
+        <button>Submit</button> 
+    </form>
+
+    <h1>Text Area</h1>
+    <form action="">
+        <input type="range" min="0" max="10" name="volumeLevel" step="2">
+        <button>Submit</button> 
+        <br>
+        <textarea rows="10" cols="10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, nemo quisquam. Eaque sed voluptate, nemo laborum cupiditate porro delectus maxime voluptatibus est voluptas aut voluptatem tempore dicta mollitia ea repudiandae.
+        </textarea>
+        <br>
+        <label for="agree_tos">I agree to the terms of service</label>
+        <input type="checkbox" id="agree_tos" name="tos">
+        <button>Submit</button> 
+    </form>
+
+    <h1>Selects and Radio Buttons</h1>
+    <h2>Select</h2>
+    <form action="">
+        <label for="shirtSize">Select your shirt size</label>
+        <select name="shirtsize" id="shirtSize">
+            <option value="s">Small</option>
+            <option value="m">Medium</option>
+            <option value="l">Large</option>
+        </select>
+        <button>Submit</button> 
+    </form>
+    <h2>Radio</h2>>
+    <form action="">
+        <label for="phone">Call Me</label>
+        <input type="radio" id="phone" name="contact" value="phone">
+        <label for="email">Email Me</label>
+        <input type="radio" id="email" name="contact" value="email">
+        <!-- same name means they're connected, can only select one at a time -->
+        <button>Submit</button>
+    </form>
+</body>
+</html>
