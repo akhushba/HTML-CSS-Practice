@@ -1,0 +1,25 @@
+h1 {
+    /* block */
+    background-color: yellow;
+}
+
+a {
+    /* in-line */
+    background-color: aquamarine;
+}
+
+body{
+    background-color: aliceblue; /* named */
+    background-color: rgb(149, 175, 238); /* rbg, red, green, blue (0-255) (0,0,0) = black, (255, 255, 255) = white*/
+    
+    background-color: #e4f5c2; /* hexadeicaml, rgb but r from 00-ff, g 00-ff, b 00-ff */
+    background-color: rgba(66, 55, 220, 0.197); /* rgba, alpha = transparency 0-1  OR can use the opacity: function if you want text to be transparent as well*/
+    /*background-color: blue; /* named */
+
+    /* inheritance, some values can be inherited to child elements, those not inherited automatically can be inherited by
+    p{
+        border: inherit;
+    }
+    */
+    
+}
