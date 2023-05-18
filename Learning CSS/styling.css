@@ -1,0 +1,77 @@
+/* or import fonts like this at the top of the css file */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+
+h1 {
+    /* block */
+    background-color: yellow;
+    /* font-family: fantasy; */
+    font-size: 28px;
+    font-weight: 100; 
+    /* or 100-900 (400 = normal, 900 = bold) not all fonts support it some only have 400-900, machine will pick closet available*/
+    text-align: center;
+    /* centered within element, if given a width will center within width
+    inherited
+    */
+    letter-spacing: 10px;
+    text-shadow: -5px -5px 2px lightblue;
+    text-shadow: -2px 2px magenta, -4px 4px cyan;
+    /* syntax order for text shadow: 
+    offset-x | offset-y | blur-radius | color (CURRENT)
+    color| offset-x | offset-y | blur-radius 
+    offset-x | offset-y | color
+    color| offset-x | offset-y 
+    offset-x | offset-y 
+
+    can also have multiple shadows separated by a comma
+    
+    */
+}
+
+a {
+    /* in-line */
+    background-color: aquamarine;
+    font-style: italic;
+}
+
+body{
+    background-color: aliceblue; /* named */
+    background-color: rgb(149, 175, 238); /* rbg, red, green, blue (0-255) (0,0,0) = black, (255, 255, 255) = white*/
+    
+    background-color: #e4f5c2; /* hexadeicaml, rgb but r from 00-ff, g 00-ff, b 00-ff */
+    background-color: rgba(66, 55, 220, 0.197); /* rgba, alpha = transparency 0-1  OR can use the opacity: function if you want text to be transparent as well*/
+    /*background-color: blue; /* named */
+
+    /* inheritance, some values can be inherited to child elements, those not inherited automatically can be inherited by
+    p{
+        border: inherit;
+    }
+    */
+    
+    /* 
+    text
+    - font, size, weight (bold or not)
+    - alignment
+    - direction of reading
+        direction: rtl or ltr
+    - text decoration
+    - text spacing
+    */
+
+    font-family: Arial, Helvetica, sans-serif;
+    /* use arial, if not helvtica, else use any sans-serif font because different machines will have different fonts
+
+    "Seguo UI" not on Mac, will use default instead unless you include a file for the font
+    space in the name so we need quotations
+
+    ALSO inherited
+    */
+
+    line-height: 1.5;
+     /* mulitiplier to cuurent font-size, changes as font size changes */
+     line-height: 36px;
+
+     font-family: 'Montserrat', sans-serif;
+     /* from google fonts, network source, not acc on machine */
+}
