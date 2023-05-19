@@ -1,0 +1,66 @@
+p{
+    text-transform: capitalize;
+    /* capitalizing first letter of every word */
+
+    font: 500 15px/2 Montserrat, sans-serif;
+    /* short hand font features, 500 weight, 15px size, double spaces, in montserrat font */
+}
+
+h1{
+    text-transform: uppercase;
+    /* long way to set it
+    text-decoration-line: line-through;
+    text-decoration-color: blueviolet;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 5px;
+     */
+    text-decoration: line-through blueviolet wavy 5px; 
+    /* short way, order doesn't matter */
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+/* pseudo class */
+a:visited{
+    color: purple;
+}
+
+a:hover{
+    /* colour: magenta; */
+    text-decoration: underline 2px;
+    /* cursor: pointer; 
+    default, changes cursor
+    */
+}
+
+/* doesn't work with just selecting "featured review" */
+/* span{
+    background-color: gold;
+} */
+
+/* use id instead */
+#featured{
+    background-color: gold;
+}
+
+#reviews{
+    text-decoration: gold underline 4px;
+}
+
+/* id's refer to one specific thing
+use classes for similar styling choices on page
+*/
+
+.posts {
+    border: dotted blue 2px;
+}
+
+ul{
+    /* list-style-type: square;
+    list-style-type: "< ";
+    list-style-type: none; */
+    /* list-style-position: inside; marker is now inside */
+}

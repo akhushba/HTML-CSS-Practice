@@ -7,8 +7,12 @@ h1 {
     /* block */
     background-color: yellow;
     /* font-family: fantasy; */
+    /* font-family: Montserrat; */
     font-size: 28px;
     font-weight: 100; 
+    /* font: 100 50x Montserrat; */
+    /* order matters, but you can change font features with font and shorthand it */
+
     /* or 100-900 (400 = normal, 900 = bold) not all fonts support it some only have 400-900, machine will pick closet available*/
     text-align: center;
     /* centered within element, if given a width will center within width
