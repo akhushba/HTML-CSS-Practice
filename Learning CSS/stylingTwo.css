@@ -28,6 +28,7 @@ a:visited{
     color: purple;
 }
 
+/* another pseudo class */
 a:hover{
     /* colour: magenta; */
     text-decoration: underline 2px;

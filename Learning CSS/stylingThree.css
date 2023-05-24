@@ -1,0 +1,54 @@
+
+
+/* universal selector, selects everything 
+* {
+    border: 1px solid green;
+   border around every element
+}
+
+body {
+    border: 1px dashed blue;
+    single border around body 
+}
+*/
+
+/* attribute selector 
+
+input{} is for all inputs (checkboxes may look weird/different tho)
+a[href="wiki"]{} any url which is exactly wiki
+a[href*="wiki"]{} any url containing wiki
+a[href^="#"]{} any url starting with #
+a[href$=".org"]{} any url ends with .org
+
+*/
+/* for <input type="number"> */
+input[type="number"]{
+    background-color: aliceblue;
+}
+
+/* multiple with same stuff? just combine them with a comma (elements, attributes, etc) */
+h1, h2, h3 {
+    color: darkslategrey;
+}
+
+/* child class, all spans in li can also do ul, or #cast (BEST OPTION)
+can do 
+
+#cast li span{} child hierarchy for specifcs
+*/
+li span{
+    color: darkcyan;
+}
+/* only li's that are direct children of ol, not all li children (grandchildren, etc) */
+ol > li {
+    border: 1px solid red;
+}
+
+/* compound selector
+score nested in h2 
+remember if you classify it as class = "score big" it is two different classes: score and big 
+.score.big{} requires element to have both classes
+*/
+h2.score{
+    border: 1px dashed gold;
+}
