@@ -52,3 +52,64 @@ remember if you classify it as class = "score big" it is two different classes: 
 h2.score{
     border: 1px dashed gold;
 }
+
+/* boxes */
+#firstHead {
+    /* OR */
+    border: 2px solid olivedrab;
+    width: fit-content;
+    /* width: 500px; */
+    /* or if you're using divs, 
+    you can set measurements to be percantage of parent div */
+    /* height: 60px; */
+    /* padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 200px;
+    padding-right: 200px; */
+    padding: 20px;
+    /* padding: top right bottom left;
+       padding: top/bottom left/right;
+    or percentage of container 
+    
+    THIS WAY ADDS TO THE DIMENSIONS
+    ALTERNATE WAY;
+    border box subtracts from width and hieght
+    box-sizing: border-box;
+    */
+}
+/* for inline elements, can change it to behave like block element 
+display: inline vs display: block
+*/
+#border span {
+    border: 2px solid darkcyan;
+    padding: 20px;
+    margin: 30px;
+}
+/* 
+Block
+    - breaks onto new line
+    - width and height are respected
+    - padding, margin, border will cause other lelements to be pushed
+    - box extends in teh inline direction to fill available space in container unless styled otherwise 
+In-Line
+    - Box doesn't break onto new line
+    - width and height don't apply
+    - vertical padding, margin, borders apply but don't cause other inline elements to move away from box
+    - horizontal padding, margin, borders will apply and cause other boxes to move away
+In-Line Block
+    - hybrid of inline and block
+    - box doesn't break into new line
+    - wdith and height are respected
+    - padding, margin, border will cause other lelements to be pushed away from the box
+
+*/
+#border .imagesMaybe{
+    border: 2px solid darkturquoise;
+    width: 200px;
+    height: 200px;
+    /* rn default block, will be stacked on top of each other */
+    display: inline;
+    /* width/hieght not respected */
+    display: inline-block;
+    /* now they're side by side */
+}
