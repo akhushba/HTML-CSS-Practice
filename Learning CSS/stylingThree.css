@@ -101,7 +101,9 @@ In-Line Block
     - box doesn't break into new line
     - wdith and height are respected
     - padding, margin, border will cause other lelements to be pushed away from the box
-
+None
+    - makes element invisible
+    - useful for animations if hiding certain feeatures at certain sizes for instance (changing from laptop screen to phone screen)
 */
 #border .imagesMaybe{
     border: 2px solid darkturquoise;
@@ -112,4 +114,35 @@ In-Line Block
     /* width/hieght not respected */
     display: inline-block;
     /* now they're side by side */
+
+    /* 
+    Margins
+    auto margin centers entire element horizontally
+    magins collapse automatically, they don't add to each other 
+        - absolute of margin value will be the margin between two elements
+        - only a conccern with the flow model, with flexbox and grids we'll be able to change this
+        - inline-block thinsg may be a bit different
+
+    margins are contained in diivs, will have div margins horizontally anyway, vertical?
+    */
+}
+
+#box {
+    background-color: turquoise;
+    /* width: 60%;
+    min-width: 300px;
+    max-width: 500px;
+    height: 200px;
+    margin: 0 auto; */
+    height: 100px;
+    width: 100px;
+    background-color: rgb(0, 128, 128);
+    /* border-radius: 40%; */
+    /* 0-50% max, can also do pixels, to do all four corners just sepcify four in sequence */
+    /* border-radius: 40% 20% 0% 50%;
+    box-shadow: 5px 5px 5px rgba(0, 128, 128, 0.449); */
+    /* x offset, y offset, blur radius, colour 
+    can keep stacking box-shadows using commas and more specs
+    */
+    overflow: scroll;
 }
