@@ -1,0 +1,21 @@
+h2 + p{
+    color: orange;
+}
+/* adjacent combinator: selects elements directly after the first element */
+
+h1 ~ p{
+    background-color: aqua;
+}
+/* sibling combinator: selects siblings (have same parent) which come after it*/
+
+h2:hover{
+    text-decoration: line-through;
+}
+
+input:placeholder-shown{
+    background-color: red;
+}
+
+body:not(h1, h2, h3, h4, h5, h6){
+    border: 1px solid green;
+}
