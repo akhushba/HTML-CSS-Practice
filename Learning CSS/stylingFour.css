@@ -32,3 +32,33 @@ p::first-line{
 p::selection{
     background-color: grey;
 }
+
+/* most specific?
+class specifications trump general specs 
+.class{color: blue;}
+p{color: orange;}
+paragraphs in .class will be blue not orange
+
+competetive specs will surrender to most specific ones, if not repeated, any specs that apply to the content will be shown
+
+Most Specific to Least
+1. Inline styles (ex. writing <p style="color: red"> </p>), para will be red no matter who else you label it
+2. ID selectors
+3. Class | Attribute | Pseudo-class
+4. Type | Pseudo elements
+
+selector specificity (# of id, # of class, # of type)
+calculates how specific the selector is
+browser looks for largest number starting from left to see which is more specific
+
+besides specificity (which targets selectors at play)
+cascade is an algorithm which decides which rule wins when therre's a conflict
+
+Most likely to be final style to least
+1. Importance
+2. Origin (browser style < personal style)
+3. Specificty 
+4. Position (order of rules, last one defined wins)
+
+https://2019.wattenberger.com/blog/css-cascade#level_1_1
+*/
