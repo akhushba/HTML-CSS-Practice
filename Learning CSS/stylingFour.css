@@ -19,3 +19,16 @@ input:placeholder-shown{
 body:not(h1, h2, h3, h4, h5, h6){
     border: 1px solid green;
 }
+
+/* pseudo elements
+may be restrictions with styles
+*/
+
+p::first-line{
+    text-decoration: line-through black;
+}
+/* first letter also exists, before/after are interesting */
+
+p::selection{
+    background-color: grey;
+}
