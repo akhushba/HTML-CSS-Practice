@@ -14,6 +14,38 @@ body{
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Bitter, serif;
+    font-weight: 500;
+}
+
+.hero{
+    height: 100vh;
+    background-color: #863ae8;
+    color: white;
+    text-align: center;
+
+    /* flexbox bit */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: -1.5px;
+    margin: 0;
+}
+
+.hero h1, .hero p{
+    width: 75%;
+    max-width: 900px;
+    margin: 16px 0;
+}
+
+.hero hr{
+    width: 75%;
+    margin: 32px 0;
 }
 
 .content .date {
@@ -31,19 +63,20 @@ h1, h2, h3, h4, h5, h6 {
 
 h2{
     font-size: 50px;
-    font-weight: 500;
     letter-spacing: -0.5px;
 }
 
 .headline{
+    font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0px;
     margin: 40px 0;
 }
 
-.code{
+code{
     color: #e95400;
+    font-weight: 700;
 }
 
 .quote{
@@ -58,4 +91,52 @@ h2{
     font-weight: 700;
     padding-left: 20px;
     /* margin works too */
+}
+
+.content h3{
+    font-size: 38px;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+}
+
+.content h4{
+    font-size: 30px;
+    letter-spacing: 0.25px;
+}
+
+.content h5{
+    font-size: 24px;
+    letter-spacing: 0.25px;
+}
+
+.content h6{
+    font-size: 20px;
+    letter-spacing: 0.25px;
+}
+
+footer{
+    background-color: #863ae8;
+}
+
+footer ul{
+    list-style: none;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 28px 0;
+}
+
+footer ul li{
+    display: inline;
+    padding: 0 16px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+footer ul li a:hover{
+    text-decoration: underline;
 }
