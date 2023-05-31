@@ -1,0 +1,63 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Forum, cursive;
+}
+
+.hero{
+    background-color: #f08e80;
+    height: 90vh;
+    color: white;
+    width: 100vw;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 24px 32px;
+}
+
+.navbar .links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 16px;
+    font-size: 1.2rem;
+}
+
+.navbar p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.navbar .contact{
+    color: #f08e80;
+    padding: 16px 24px;
+    text-decoration: none;
+}
+
+.navbar .contact:hover{
+    opacity: 0.8;
+}
+
+.heroContent{
+    padding: 0 15%;
+}
+
+.heroContent .tagline{
+    font-size: 3.5rem;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.twoCols{
+    font-size: 1rem;
+}
+
+.twoCols .half{
+    width: 49.5%;
+    box-sizing: border-box;
+    float: left;
+}
