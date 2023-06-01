@@ -1,0 +1,72 @@
+.box{
+    /* border: 1px solid red;
+    height: 300px;
+    width: 300px; */
+
+    /* background-image: url("https://plus.unsplash.com/premium_photo-1674939149067-54c18a73efa2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60"); */
+    /* default uses entire pic */
+    /* background-image: url("images/peacock.png");
+    background-color: aquamarine; */
+    /* repeats peacock because small, background color shows because transparent*/
+    /* background-image: url("images/peacock.png"), url("images/sunset.jpg"); */
+    /* layers images because peacock is transparent, order matters, first goes on top*/
+    /* background-repeat: no-repeat; */
+    /* only one peacock now, can control repeat in x and y*/
+
+    /* height: 500px;
+    width: 900px;
+    background-image: url("images/food.jpg");
+    background-size: contain;
+    background-size: cover;
+    background-image: url("images/people.jpg");
+    background-position: center; */
+    /* positions background photo, can use percentages too x y */
+    /* right now image underneath border, to make it fit within border
+    background-clip: padding-box;
+    default is border box
+    content box is smaller, inspect to see area
+    */
+
+    /* border: 2px solid black;
+    height: 400px;
+    width: 400px;
+    background-image: linear-gradient(45deg, cyan, yellow, magenta); */
+    /* can define start of gradients as well 
+    uigradients.com helps you find gradient and gives you code
+
+    there's also radial gradients 
+        if not square to get circular radial gradient, write circle, then colours
+        can also adjust position and fill percentage
+    and conic gradients
+        pivot gradient, harsh line at start
+        don't want it to be harsh?
+        ex. cyan and magenta, do cyan, magenta, cyan
+        can control pivot point and rotation
+        can set hard stops for pie charts
+
+    and repeating-linear-gradient
+        can make stripes, plaid even (but hard)
+        repeating radial exists as well
+        repeating conic as well
+        useful for patterns
+    */
+
+    /* background: url("images/peacock.png") no-repeat center/100%, url("images/sunset.jpg"), center; */
+    /* for shorthand for these properties use background:
+        order on MDN, there are also rules
+        can have multiple layers 
+    */
+
+    /* filters */
+    border: 2px solid black;
+    height: 700px;
+    width: 700px;
+    background-image: url("images/people.jpg");
+    background-size: cover;
+    filter:blur(5px);
+    filter:grayscale() contrast(150%);
+    filter:hue-rotate(180deg); /* opposite end of color wheel */
+    /* affects entire element, can also be done to img 
+        even more options
+    */
+}
