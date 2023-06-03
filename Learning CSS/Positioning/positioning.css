@@ -1,0 +1,38 @@
+p{
+    border: 1px oslid black;
+    background-color: magenta;
+    margin: 30px;
+    font-size: 2rem;
+    position: static;
+    
+}
+
+#special{
+    position: relative;
+    background-color: yellow;
+    top: 40px;
+    left: 40px;
+    z-index: 0;
+    
+}
+
+/* 
+    z-index: specifies elevantion of an element relative to other elements
+        higher index = on top
+
+    static
+        - defult position property
+        - top, left, bottom, z-index does nothing
+        - fits in normal flow of document
+    
+    relative
+        - element fits into normal flow of document
+        - top, left, bottom, z-index scoots element relative to default position
+        even if element is offset, original space in document is maintained (inital location still preserved)
+
+    absolute
+        - element is removed from normal document flow and now relative to nearest parent element with explciti position property
+        if no parent has a position property other than default (static), it's relative to thte root container
+        - no space is left where it used to be
+        - top, right, bottom, left, and z-index can be used to scoot teh element further
+    */
