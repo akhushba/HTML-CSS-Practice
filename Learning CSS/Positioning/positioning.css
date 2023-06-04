@@ -35,4 +35,5 @@ p{
         if no parent has a position property other than default (static), it's relative to thte root container
         - no space is left where it used to be
         - top, right, bottom, left, and z-index can be used to scoot teh element further
+        
     */
