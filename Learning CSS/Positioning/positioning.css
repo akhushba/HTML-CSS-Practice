@@ -1,4 +1,4 @@
-p{
+/* p{
     border: 1px oslid black;
     background-color: magenta;
     margin: 30px;
@@ -14,7 +14,7 @@ p{
     left: 40px;
     z-index: 0;
     
-}
+} */
 
 /* 
     z-index: specifies elevantion of an element relative to other elements
@@ -34,6 +34,71 @@ p{
         - element is removed from normal document flow and now relative to nearest parent element with explciti position property
         if no parent has a position property other than default (static), it's relative to thte root container
         - no space is left where it used to be
-        - top, right, bottom, left, and z-index can be used to scoot teh element further
-        
+        - top, right, bottom, left, and z-index can be used to scoot the element further
+    
+    fixed
+        - element is revmoed from normal document flow and is positioned relative to root container element
+        - space is left where it used to be
+        - top, right, bottom, left, and z-index can be used to scoot the element relative to the root element
+        - will stay in place when scrolling
     */
+
+.box{
+    background-color: olive;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    /* position: relative; */
+}
+.box span{
+    /* will be relative to its own parent because parent position is relative, otherwise it will move relative to body*/
+    color: white;
+    background-color: red;
+    position: absolute;
+    right: 0;
+}
+
+.box p {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+}
+
+.buttonBody{
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(#2088d1, #01579b);
+    font-family: "DM Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    position: relative;
+    background-color: rgba(0,0,0,0.2);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.btn:hover{
+    opacity: 80%;
+
+}
+
+.badge {
+    background-color: #4caf50;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    position: absolute;
+    right: -12px;
+    top: -15px;
+}

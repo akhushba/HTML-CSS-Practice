@@ -1,0 +1,71 @@
+
+/* position one */
+/* .box1 {
+    background-color: #F44336;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+  
+.box2 {
+    background-color: #E91E63;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.box3 {
+    background-color: #9C27B0;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.box4 {
+    background-color: #3F51B5;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+} */
+
+/* position two */
+
+/* .container {
+    background-color: red;
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    right: -50px;
+    bottom: 150px;
+    top: calc(50% - 50px);
+} */
+
+/* position three */
+.sidebar{
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    background-color: red;
+    right: 0;
+    top: 0;
+}
+
+.sidebar button{
+    position: absolute;
+    right: 0;
+}
