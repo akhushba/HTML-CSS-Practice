@@ -1,0 +1,16 @@
+.btn{
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 30px;
+    /* transition: background-color 1s; will transition whenever background-colour changes 
+    */
+}
+
+/* harsh w/o transition*/
+.btn:hover{
+    transition: background-color 1s;
+    /* only when hovering */
+    background-color: orangered;
+}
