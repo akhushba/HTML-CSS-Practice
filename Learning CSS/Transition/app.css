@@ -10,6 +10,7 @@
 
 /* harsh w/o transition*/
 .btn:hover{
+
     transition: background-color 1s;
     /* only when hovering */
     background-color: orangered;
