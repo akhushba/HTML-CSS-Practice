@@ -27,4 +27,15 @@ There's also timimng functions, look at mdn for ease  and cubic-bezier functions
 
 
 some properties should be animated for performance
+
+
+for animations remember:
+computer processes webpages as::afterjavascript > style > layout > pain > composite
+
+animating with margins will recompute the style/layout layer alongside next ones
+animating with opacity or transform will only reevalute the composite layer
+
+
+tansorm origin used to move point of origin on element for transformations
+transform: animation
  */
